@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"><style>
+      body{
+  padding: 0;
+  margin: 0;
+
+ background-color: #0000;
+
+}
+html{
+  background-color: #00000070;
+  background-color: linear-gradient(45deg,orangered,blue);
+}
+
+   .middle{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center; 
+}
+
+/* #f1f1f */
+.btn{
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  background: #fff ;
+  margin: 10px;
+  border-radius: 30%;
+  box-shadow: 0 5px 15px -5px #00000070;
+  color: #0a0a0a;
+  overflow: hidden;
+  position: relative;
+}
+.btn i{
+  line-height: 90px;
+  font-size: 26px;
+  transition: 0.2s linear;
+}
+.btn:hover i{
+  transform: scale(1.3);
+  color: #f1f1f1;
+}
+.btn::before{
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: #fc2e09;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+.btn:hover::before{
+  animation: aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+@keyframes aaa {
+  0%{
+    left: -110%;
+    top: 90%;
+  }50%{
+    left: 10%;
+    top: -30%;
+  }100%{
+    top: -10%;
+    left: -10%;
+  }
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="middle">
+      <a class="btn" href=" https://www.facebook.com/people/Aniket-Mishra/100036708991682 ">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a class="btn" href="https://twitter.com/Aniket14097080?s=08 ">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a class="btn" href=" google ">
+        <i class="fab fa-google"></i>
+      </a>
+      <a class="btn" href=" https://www.instagram.com/invites/contact/?i=hmbb1plecws3&utm_content=7c2vyh3 ">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a class="btn" href=" https://www.youtube.com/channel/UCue2GqW5hUZ-hlvd0-IM4zA?view_as=subscriber ">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </div>
+  </body>
+</html>
